@@ -1,0 +1,20 @@
+---
+title: "Tut1"
+author: "Chen Jiesheng (A0099515U)"
+date: "2016年1月22日"
+output: html_document
+---
+
+```{r echo = FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r echo=FALSE}
+qplot(speed, dist, data=cars)
+```
+
+```{r echo=FALSE}
+speed4_cars <- cars %>% filter(speed==4)
+print(speed4_cars)
+```
