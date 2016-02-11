@@ -1,0 +1,48 @@
+---
+title: "tut3"
+author: "Chen Jiesheng (A0099515U)"
+date: "2016年2月11日"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r,message=FALSE,echo=FALSE}
+library(ggplot2)
+library(dplyr)
+labs <- read.csv("~/labs.csv")
+```
+
+(C)
+```{r,echo=FALSE}
+var4 <- ifelse(labs$SvcSat=="Y",1,0)
+cor(labs$WaitTime,var4)
+```
+Hence, the longer the waiting time, the more dissatisfied customers will be.
+
+(d)
+```{r,echo=FALSE}
+test = mutate(labs,bmi=WT/(HT*HT))
+c = select(test,17,13)
+c = na.omit(c)
+var5=as.numeric(levels(c$TC)[c$TC])
+cor(c$bmi, var5)
+```
+
+(e)
+```{r,echo=FALSE}
+test = mutate(labs,bmi=WT/(HT*HT))
+c=select(test,17,1,5,6,11,13)
+c=na.omit(c)
+var1 <- ifelse(c$ETHNIC=="C",1,0)
+var2 <- ifelse(c$Gender=="M",1,0)
+lm(c$bmi~var1+var2+c$AGE+c$SBP+c$TC)
+summary(lm(c$bmi~var1+var2+c$AGE+c$SBP+c$TC))
+```
+From above, we will know that the BMI = (-0.78888)*1+1*(0.06513)+45*0.02346+0.06053*135+0.03927*150 = 14.394
+The assumption is that our model is correct and representative.
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
