@@ -1,18 +1,14 @@
 ---
 title: "tut3"
 author: "Chen Jiesheng (A0099515U)"
-date: "2016å¹´2æœˆ11æ—¥"
-output: html_document
+date: "2016å¹?2æœ?11æ—?"
+output: md_document
 ---
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r,message=FALSE,echo=FALSE}
 library(ggplot2)
 library(dplyr)
-labs <- read.csv("~/labs.csv")
+labs <- read.csv(file="labs.csv")
 ```
 
 (C)
