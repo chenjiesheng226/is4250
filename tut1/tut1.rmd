@@ -1,8 +1,8 @@
 ---
 title: "Tut1"
 author: "Chen Jiesheng (A0099515U)"
-date: "2016å¹´1æœˆ22æ—¥"
-output: html_document
+date: "2016å¹?1æœ?22æ—?"
+output: md_document
 ---
 
 ```{r echo = FALSE}
