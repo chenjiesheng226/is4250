@@ -2,7 +2,7 @@
 title: "Tutorial 2"
 author: "Chen Jiesheng (A0099515U)"
 date: "2016Äê1ÔÂ29ÈÕ"
-output: html_document
+output: md_document
 ---
 
 
@@ -12,7 +12,7 @@ library(dplyr)
 ```
 1. (a) For Waiting Time:
 ```{r, echo=FALSE}
-labs <- read.csv("~/labs.csv")
+labs <- read.csv(file="labs.csv")
 median(labs$WaitTime)
 hist(labs$WaitTime)
 ```
