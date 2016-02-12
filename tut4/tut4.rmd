@@ -1,0 +1,33 @@
+---
+title: "tut4"
+author: "Chen Jiesheng (A0099515U)"
+date: "2016年2月12日"
+output: md_document
+---
+
+```{r,message=FALSE,echo=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+(a)
+```{r,echo=FALSE}
+B = matrix( c(3, 4, 7, 2), nrow=2, ncol=2)
+colnames(B) <- c("Diabetic Complications Present","Diabetic Complications Absent")
+rownames(B) <- c("Diabetic Control Good","Diabetic Control Poor")
+print(B)
+prop.table(B,1)
+```
+From above table, indeed it is different.
+
+(b)
+```{r,echo=FALSE}
+t.test(prop.table(B,1)[,1],prop.table(B,1)[,2])
+
+fisher.test(B)
+```
+Given the fisher test, p-value is 0.3024 > 0.05. Hence, the difference between the two rates is not statistically different.
+
+(c) Pearson's chi-squared test (χ2) is a statistical test applied to sets of categorical data to evaluate how likely it is that any observed difference between the sets arose by chance.
+
+Since there are no categorical data in this matrix, chi-squired test is not applicable.
