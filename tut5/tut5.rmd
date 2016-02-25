@@ -1,0 +1,40 @@
+---
+title: "tut5"
+author: "Chen Jiesheng (A0099515U)"
+date: "2016Äê2ÔÂ25ÈÕ"
+output: md_document
+---
+Chen Jiesheng (A0099515U)
+
+```{r,message=FALSE,echo=FALSE}
+library(Rcmdr)
+library(car)
+library(RcmdrMisc)
+library(foreign, pos=20)
+```
+
+```{r}
+country <- read.spss(file="country122.sav", use.value.labels=TRUE, max.value.labels=Inf, to.data.frame=TRUE)
+colnames(country) <- tolower(colnames(country))
+```
+
+```{r}
+reg1 <- lm(lifeexpf~birthrat, data=country)
+summary(reg1)
+```
+Given that the p-value is smaller than 0.05, it is statistically significant that there is a linear relationship between life expectancy and birth rate.
+
+R-square is 75.4%, so the relationship is pretty strong.
+
+```{r}
+scatterplot(lifeexpf~birthrat, reg.line=lm, boxplots=FALSE, data=country)
+```
+
+Hence, the simple linear equation is life expectancy = -0.74471 * birth rate + 89.58892
+
+Given birthrate of 25 livebirths per 1000 population, life expectancy = 
+```{r}
+-0.74471 * 0.025 + 89.58892
+```
+
+The assumptions are that birthrate given is representative to the population birthrate, not anomaly.
