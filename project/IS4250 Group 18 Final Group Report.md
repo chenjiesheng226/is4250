@@ -51,6 +51,8 @@ This _paper Health-Related Lifestyle Behaviors among Male and Female Rural-to-Ur
 
 The study subjects are rural-to-urban migrant workers in China, underpinning the unprecedented urbanization movements in human history. According to National Bureau of Statistics of China, there was a total of 252.78 million migrant workers in 2011[^1]. By 2025, this number is expected to increase by another 243 million.ii
 
+[^1]: National Bureau of Statistics of China (2012): "Statistical Communiqu¨¦ on the 2011 National Economic and Social Development" [http://www.stats.gov.cn/english/NewsEvents/201202/t20120222\_26575.html](http://www.stats.gov.cn/english/NewsEvents/201202/t20120222_26575.html).
+
  ![](project_code_files/figure-markdown_strict/fig1.png)
 
 Fig 1 Number of floating population/ migrant workers in Chinaiii
@@ -611,7 +613,7 @@ Experiment results and plots are available at [https://github.com/xiajingyi/IS42
 
 
 
-[^1]: National Bureau of Statistics of China (2012): "Statistical Communiqu¨¦ on the 2011 National Economic and Social Development" [http://www.stats.gov.cn/english/NewsEvents/201202/t20120222\_26575.html](http://www.stats.gov.cn/english/NewsEvents/201202/t20120222_26575.html).
+## References
 
 i
 
