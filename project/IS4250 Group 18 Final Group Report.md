@@ -110,7 +110,7 @@ To understand cumulative odds logistic regression model, we need to first unders
 
 This is the log-odds of two cumulative probabilities, one less-than and the other greater-than type. This measures how likely the response is to be in category j or below versus in a category higher than j. In this paper, categories of j are sub-categories of lifestyle scores: healthy (0 point), relatively healthy (1-2) or unhealthy (3-6 points). It is cumulative because the numerator include all categories less than j.
 
-The cumulative probabilities are given by: P(Y¡Üj)=exp(¦Áj+¦Âx)/(1+exp(¦Áj+¦Âx)). In R, one can use glm() function to perform logistic regression, get confidence interval using confint() function and cumulative odds ratios (COR) can be calculated by applying exp(coef(<logistic regreassion results>)).
+The cumulative probabilities are given by: \\(P(Y¡Üj)=exp(¦Áj+¦Âx)/(1+exp(¦Áj+¦Âx))\\). In R, one can use glm() function to perform logistic regression, get confidence interval using confint() function and cumulative odds ratios (COR) can be calculated by applying exp(coef(<logistic regreassion results>)).
 
 #
 ## 2. Experiment Replication and Results Comparison
@@ -603,16 +603,13 @@ The paper is the first comprehensive study which strives to find association bet
 The paper is instrumental in directing possible future studies. Firstly, a comparison of health status between city residents and migrant workers can shed lights on healthcare inequality across the two groups in China. Secondly, longitudinal studies using the same lifestyle data and approaches will be helpful to identify causal relationship between health and lifestyle behaviors in general.
 
 #
-## 4.
-
-## Appendix
+## 4. Appendix
 
 All source codes are available at [https://github.com/xiajingyi/IS4250/blob/master/Project/project\_code.Rmd](https://github.com/xiajingyi/IS4250/blob/master/Project/project_code.Rmd)
 
 Experiment results and plots are available at [https://github.com/xiajingyi/IS4250/blob/master/Project/project\_code.md](https://github.com/xiajingyi/IS4250/blob/master/Project/project_code.md)
 
-
-
+#
 ## References
 
 i
