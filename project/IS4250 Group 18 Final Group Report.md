@@ -10,9 +10,19 @@ Xia Jingyi (A0100125H)
 
 ## Content
 1. Introduction
+
     1.1 Paper Background
+
     1.2 Literature Review
-#
+
+    1.3 Purpose of the Paper
+
+    1.4 Collection and Preparation of Data
+
+    1.5 Statistical Analysis Methods
+
+2. Experiment Replication and Results Comparison
+
 ## 1. Introduction
 
 ## 1.1 Paper Background
