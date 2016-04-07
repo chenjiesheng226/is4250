@@ -1,4 +1,4 @@
-![](project_code_files/figure-markdown_strict/nus.png)<!-- -->
+![](project_code_files/figure-markdown_strict/nus.png)
 
 ## IS4250 Healthcare Analytics
 
@@ -9,7 +9,9 @@ Chen Jiesheng (A0099515U)
 Xia Jingyi (A0100125H)
 
 ## Content
-
+1. Introduction
+    1.1 Paper Background
+    1.2 Literature Review
 #
 ## 1. Introduction
 
