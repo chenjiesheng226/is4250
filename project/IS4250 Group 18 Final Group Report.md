@@ -22,6 +22,26 @@ Xia Jingyi (A0100125H)
     1.5 Statistical Analysis Methods
 
 2. Experiment Replication and Results Comparison
+    
+    2.1 Data Preparation for Replicating Experiments
+
+    2.2 Socio-demographic characteristics of participants
+
+    2.3 Health status of migrant population
+
+    2.4 Association between lifestyle score and socio-demographic characteristics and physical and mental status
+
+    2.5 Replicate of Experiment Plots
+
+3. Evaluation of the Paper
+
+    3.1 Challenges in the paper
+
+    3.2 Limitations of the paper
+
+    3.3 Contributions of the paper to the field of health
+
+4. Appendix
 
 ## 1. Introduction
 
